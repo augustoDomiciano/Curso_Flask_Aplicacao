@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Livros a venda</title>
+</head>
+<body>
+    Livros a venda<br>
+    <table border="1">
+        {% for livr in aLivros %}
+        <tr>
+            <td>{{ livr.titulo }}</td> 
+            <td>{{ livr.autor }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p><img src="https://a-static.mlcdn.com.br/48x48/livro-duna/livrariacirculo/28983p/99d5e559fd5e73cdba9e6b44d10b8b37.jpg" alt="livro-duna">
+        <img src="https://a-static.mlcdn.com.br/48x48/cosmos-carl-sagan/dragonfoxlivros/dfxn0002073/22fefc1f01aa113f66014872077fb37d.jpg" alt="cosmos-carl-Sagan">
+        <img src="https://a-static.mlcdn.com.br/48x48/os-miseraveis/aguiabooks/1000275735/6390d8bccb1723de8754feeda640e4f2.jpg" alt="os-miseraveis"></p>
+</body>
+</html>
