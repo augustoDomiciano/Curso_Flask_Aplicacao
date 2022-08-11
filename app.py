@@ -6,8 +6,9 @@ def ola_mundo():
     #criar uma variável com o meu nome
     nome="Augusto Rogerio Domiciano"
     produtos = [
-    {"nome": "Ração", "preco": 199.99},
-    {"nome": "Playstation", "preco": 1999.99}]
+    {"nome": "PlayStation 5", "preco": 2000.00},
+    {"nome": "Xbox Series X", "preco": 3999.99},
+    {"nome": "Nitendo Switch", "preco": 1000.00}]
 
     return render_template("alo.html", n=nome, aProdutos=produtos), 200
 
