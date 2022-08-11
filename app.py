@@ -4,11 +4,11 @@ app = Flask("projeto")
 @app.route("/")
 def ola_mundo():
     #criar uma variável com o meu nome
-    nome="Augusto R Domiciano"
+    nome="Augusto Rogerio Domiciano"
     produtos = [
     {"nome": "Ração", "preco": 199.99},
     {"nome": "Playstation", "preco": 1999.99}]
 
     return render_template("alo.html", n=nome, aProdutos=produtos), 200
 
-app.run()
+app.run(debug=True)
