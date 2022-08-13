@@ -2,23 +2,21 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Alô mundo com Jinja3</title>
+    <title>Loja do Augusto</title>
 </head>
 <body>
-    Olá, vamos usar arquivos HTML<br>
-    <img src="https://raw.githubusercontent.com/abrahamcalf/programming-languages-logos/master/src/html/html_48x48.png"
-    alt="HTML logo"> 
+    Pagina inical<br>
+    <img src="https://a-static.mlcdn.com.br/80X80/ponteira-de-arvore-de-natal-estrela-20cm-ouro-1141674-cromus/magazineluiza/232249900/8ae6f927b50619b9e1a1b152647644e4.jpg"
+    alt="Empresa logo"> 
     <p>Nome: {{ n }}</p>
     <table border="1">
         {% for prod in aProdutos %}
         <tr>
-            <td>{{ prod.nome }}</td> 
-            <td>{{ prod.preco }}</td>
+            <td>{{ prod.Categoria }}</td> 
+            <td>{{ prod.Quantidade }}</td>
         </tr>
         {% endfor %}
     </table>
-    <p><img src="https://a-static.mlcdn.com.br/48x48/console-playstation-5-ps5-sony/magazineluiza/043079500/9d4f0cd7244929620b459cf9fd5e471c.jpg" alt="Ps5 imagem">
-        <img src="https://a-static.mlcdn.com.br/48x48/xbox-series-s-2020-nova-geracao-512gb-ssd-1-controle-branco-microsoft/magazineluiza/043083000/32fe1e8fc7e51793a5ec7f89abd77a9d.jpg" alt="xbox-series-s-2020-nova-geracao-512gb-ssd-1-controle-branco-microsoft">
-        <img src="https://a-static.mlcdn.com.br/48x48/nintendo-switch-32gb-hac-001-01-1-controle-joy-con-vermelho-e-azul/magazineluiza/043082000/d38296e874a7d5f3e06ff0d8704bb123.jpg" alt="Nitendo Switch"></p>
+    <p></p>
 </body>
 </html>

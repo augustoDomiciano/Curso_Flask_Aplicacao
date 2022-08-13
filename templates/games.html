@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Games a venda</title>
+</head>
+<body>
+    Games<br>
+    <img src="https://a-static.mlcdn.com.br/48x48/controle-para-ps4-e-pc-sem-fio-dualshock-4-sony-midnight-blue/magazineluiza/043183500/0ae2f539d96b6c2158d66f7682592abf.jpg" alt="Logo games"> 
+    <table border="1">
+        {% for gms in aGames %}
+        <tr>
+            <td>{{ gms.nome }}</td> 
+            <td>{{ gms.preco }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p><img src="https://a-static.mlcdn.com.br/48x48/console-playstation-5-ps5-sony/magazineluiza/043079500/9d4f0cd7244929620b459cf9fd5e471c.jpg" alt="Ps5 imagem">
+        <img src="https://a-static.mlcdn.com.br/48x48/xbox-series-s-2020-nova-geracao-512gb-ssd-1-controle-branco-microsoft/magazineluiza/043083000/32fe1e8fc7e51793a5ec7f89abd77a9d.jpg" alt="xbox-series-s-2020-nova-geracao-512gb-ssd-1-controle-branco-microsoft">
+        <img src="https://a-static.mlcdn.com.br/48x48/nintendo-switch-32gb-hac-001-01-1-controle-joy-con-vermelho-e-azul/magazineluiza/043082000/d38296e874a7d5f3e06ff0d8704bb123.jpg" alt="Nitendo Switch"></p>
+</body>
+</html>
